@@ -1,0 +1,45 @@
+$category-font-size: 14px;
+$headline-font-size: 24px;
+$description-font-size: 16px;
+$category-font-color: #0059bf;
+$headline-font-color: #000000;
+$description-font-color: #606669;
+
+.main-container {
+	margin: auto;
+	width: 80%;
+	font-family: 'PT Serif', serif;
+}
+
+.container-element {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	border-bottom: 1px solid #e1e2e3;
+}
+
+.container-element .category {
+	color: $category-font-color;
+	font-size: $category-font-size;
+}
+
+.container-element .headline {
+	color: $headline-font-color;
+	font-size: $headline-font-size;
+}
+
+.container-element .description {
+	color: $description-font-color;
+	font-size: $description-font-size;
+}
+
+
+img {
+	width: 316px;
+	height: 237px;
+	object-fit: contain;
+}
+
+.text {
+	padding-left: 20px;
+}

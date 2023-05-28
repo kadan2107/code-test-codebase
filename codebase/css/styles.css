@@ -1,0 +1,37 @@
+.main-container {
+  margin: auto;
+  width: 80%;
+  font-family: "PT Serif", serif;
+}
+
+.container-element {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid #e1e2e3;
+}
+
+.container-element .category {
+  color: #0059bf;
+  font-size: 14px;
+}
+
+.container-element .headline {
+  color: #000000;
+  font-size: 24px;
+}
+
+.container-element .description {
+  color: #606669;
+  font-size: 16px;
+}
+
+img {
+  width: 316px;
+  height: 237px;
+  object-fit: contain;
+}
+
+.text {
+  padding-left: 20px;
+}/*# sourceMappingURL=styles.css.map */
