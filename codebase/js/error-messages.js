@@ -1,6 +1,7 @@
 export const errorMsgContainer = {
 
-   emptyResponseMsg : 'Response is empty!😞'
+   emptyResponseMsg : 'Response is empty!😞',
+   executionFailedMsg : 'Something went wrong!😞'
 }
 
 

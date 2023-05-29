@@ -7,7 +7,10 @@ function getJSONResponse() {
     const filePath = '../../json/code-test.json';
 
     fetch(filePath).then(response => {
-        return response.json();
+        if(response.ok){
+            return response.json();
+        }
+        throw new Error(errorMsgContainer.executionFailedMsg);
     }).then(data => {
         if(data.articles.length > 0){
             prepareHTML(data.articles);
@@ -15,6 +18,8 @@ function getJSONResponse() {
         else{
             alert(errorMsgContainer.emptyResponseMsg);
         }
+    }).catch((error) => {
+        alert(error);
     });
 }
 
@@ -24,7 +29,7 @@ function getJSONResponse() {
  */
 
 function prepareHTML(articleData) {
-    var div = document.getElementsByClassName('main-container')[0];
+    var div = document.querySelector('.main-container');
      // Loop through the articleArray and create a dynamic html
     articleData.forEach(element => {
         div.innerHTML += `<div class='container-element'>
@@ -32,7 +37,6 @@ function prepareHTML(articleData) {
                                 <p class='category'>`+ element.primarySectionRouteName+ `</p>
                                 <h1 class='headline'>`+element.headline+`</h1>
                                 <p class='description'>`+ element.standfirst + `</p>
-                               
                             </div>
                             <div class='image'>
                                 <img src='`+ element.thumbnail.src + `' title='`+element.thumbnail.title+`'>

@@ -12,10 +12,9 @@ $description-font-color: #606669;
 }
 
 .container-element {
+	padding: 0px 6%;
 	display: flex;
 	justify-content: space-between;
-	padding: 1em;
-	border-bottom: 1px solid #e1e2e3;
 }
 
 .container-element .category {
@@ -31,8 +30,8 @@ $description-font-color: #606669;
 .container-element .description {
 	color: $description-font-color;
 	font-size: $description-font-size;
+	font-family: 'Quicksand', sans-serif;
 }
-
 
 img {
 	width: 316px;
@@ -40,6 +39,7 @@ img {
 	object-fit: contain;
 }
 
-.text {
-	padding-left: 20px;
+.text, .image{
+	padding: 10px 0px; 
+	border-bottom: 1px solid #e1e2e3;
 }
