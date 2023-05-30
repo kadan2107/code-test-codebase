@@ -6,8 +6,6 @@
 
 .container-element {
   padding: 0px 6%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .container-element .category {
@@ -32,7 +30,8 @@ img {
   object-fit: contain;
 }
 
-.text, .image {
+.inner-box {
+  display: flex;
   padding: 10px 0px;
   border-bottom: 1px solid #e1e2e3;
 }/*# sourceMappingURL=styles.css.map */

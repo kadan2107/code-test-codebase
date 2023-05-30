@@ -33,6 +33,7 @@ function prepareHTML(articleData) {
      // Loop through the articleArray and create a dynamic html
     articleData.forEach(element => {
         div.innerHTML += `<div class='container-element'>
+                            <div class="inner-box">
                             <div class='text'>
                                 <p class='category'>`+ element.primarySectionRouteName+ `</p>
                                 <h1 class='headline'>`+element.headline+`</h1>
@@ -40,6 +41,7 @@ function prepareHTML(articleData) {
                             </div>
                             <div class='image'>
                                 <img src='`+ element.thumbnail.src + `' title='`+element.thumbnail.title+`'>
+                            </div>
                             </div>
                         </div>`;
     });
