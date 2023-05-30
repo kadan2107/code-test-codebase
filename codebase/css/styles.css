@@ -32,6 +32,7 @@ img {
 
 .inner-box {
   display: flex;
+  justify-content: space-between;
   padding: 10px 0px;
   border-bottom: 1px solid #e1e2e3;
 }/*# sourceMappingURL=styles.css.map */
