@@ -4,11 +4,14 @@ $description-font-size: 16px;
 $category-font-color: #0059bf;
 $headline-font-color: #000000;
 $description-font-color: #606669;
+$font-family-container : 'PT Serif', serif;
+$font-family-description: 'Quicksand', sans-serif;
+$border-bottom-color :1px solid #e1e2e3;
 
 .main-container {
 	margin: auto;
 	width: 80%;
-	font-family: 'PT Serif', serif;
+	font-family: $font-family-container;
 }
 
 .container-element {
@@ -25,13 +28,13 @@ $description-font-color: #606669;
 	.description {
 		color: $description-font-color;
 		font-size: $description-font-size;
-		font-family: 'Quicksand', sans-serif;
+		font-family: $font-family-description
 	}
 	.inner-box{
 		display:flex;
 		justify-content: space-between;
 		padding: 10px 0px; 
-		border-bottom: 1px solid #e1e2e3;
+		border-bottom: $border-bottom-color;
 	}
 	img {
 		width: 316px;
