@@ -7,32 +7,27 @@
 .container-element {
   padding: 0px 6%;
 }
-
 .container-element .category {
   color: #0059bf;
   font-size: 14px;
 }
-
 .container-element .headline {
   color: #000000;
   font-size: 24px;
 }
-
 .container-element .description {
   color: #606669;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
-
-img {
-  width: 316px;
-  height: 237px;
-  object-fit: contain;
-}
-
-.inner-box {
+.container-element .inner-box {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
   border-bottom: 1px solid #e1e2e3;
+}
+.container-element img {
+  width: 316px;
+  height: 237px;
+  object-fit: contain;
 }/*# sourceMappingURL=styles.css.map */
