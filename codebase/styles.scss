@@ -6,7 +6,7 @@ $headline-font-color: #000000;
 $description-font-color: #606669;
 $font-family-container : 'PT Serif', serif;
 $font-family-description: 'Quicksand', sans-serif;
-$border-bottom-color :1px solid #e1e2e3;
+$border-bottom-color : #e1e2e3;
 
 .main-container {
 	margin: auto;
@@ -34,7 +34,7 @@ $border-bottom-color :1px solid #e1e2e3;
 		display:flex;
 		justify-content: space-between;
 		padding: 10px 0px; 
-		border-bottom: $border-bottom-color;
+		border-bottom: 1px solid $border-bottom-color;
 	}
 	img {
 		width: 316px;
